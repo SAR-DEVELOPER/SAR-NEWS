@@ -17,12 +17,11 @@ export default function Header6({ scroll,
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-4 col-md-6 col-sm-6 order-2 order-lg-0">
-
                             </div>
                             <div className="col-lg-4 col-md-3 order-0 order-lg-2 d-none d-md-block">
                                 <div className="header__top-logo logo text-lg-center">
-                                    <Link href="/index-6" className="logo-dark"><img src="/assets/img/logo/logo.png" alt="Logo" /></Link>
-                                    <Link href="/index-6" className="logo-light"><img src="/assets/img/logo/logo.png" alt="Logo" /></Link>
+                                    <Link href="/" className="logo-dark"><img src="/assets/img/logo/logo.png" alt="Logo" /></Link>
+                                    <Link href="/" className="logo-light"><img src="/assets/img/logo/logo.png" alt="Logo" /></Link>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-3 col-sm-6 order-3 d-none d-sm-block">

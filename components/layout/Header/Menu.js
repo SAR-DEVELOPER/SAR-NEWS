@@ -15,10 +15,6 @@ export default function Menu({ handleMobileMenuOpen, handleSidebarOpen, offCanva
         <>
             <div className="tgmenu__wrap">
                 <nav className="tgmenu__nav">
-                    <div className="logo d-block d-lg-none">
-                        <Link href="/index-6" className="logo-dark"><img src="/assets/img/logo/logo.png" alt="Logo" /></Link>
-                        <Link href="/" className="logo-light"><img src="/assets/img/logo/logo.png" alt="Logo" /></Link>
-                    </div>
                     {logoAlt &&
                         <div className="d-flex gap-4 align-items-center">
                             <div className="offcanvas-toggle" onClick={handleSidebarOpen}>
@@ -36,13 +32,12 @@ export default function Menu({ handleMobileMenuOpen, handleSidebarOpen, offCanva
                     }
                     <div className="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
                         <ul className="navigation">
-                            <li className={router.pathname == "/index-6" ? "active" : ""}><Link href="/index-6">Home</Link></li>
+                            <li className={router.pathname == "/" ? "active" : ""}><Link href="/">Home</Link></li>
                             <li className={router.pathname == "/lifestyle" ? "active" : ""}><Link href="/lifestyle">news</Link></li>
                             <li className={router.pathname == "/travel" ? "active" : ""}><Link href="/travel">review</Link></li>
                             <li className={router.pathname == "/lifestyle" ? "active" : ""}><Link href="/lifestyle">literation</Link></li>
                             <li className={router.pathname == "/lifestyle" ? "active" : ""}><Link href="/lifestyle">regulation</Link></li>
                             <li className={router.pathname == "/lifestyle" ? "active" : ""}><Link href="/lifestyle">collaboration</Link></li>
-                            <li className={router.pathname == "/lifestyle" ? "active" : ""}><Link href="/lifestyle">other links</Link></li>
                         </ul>
                     </div>
                     <div className="tgmenu__action">

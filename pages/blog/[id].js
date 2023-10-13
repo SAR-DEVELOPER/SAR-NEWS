@@ -37,9 +37,9 @@ export default function BlogDetails() {
                                         <div className="blog-details-wrap">
                                             <ul className="tgbanner__content-meta list-wrap">
                                                 <li className="category"><Link href="/blog">{item.category}</Link></li>
-                                                <li><span className="by">By</span> <Link href="/blog">alonso d.</Link></li>
-                                                <li>nov 22, 2022</li>
-                                                <li>23 comments</li>
+                                                <li><span className="by">By</span> <Link href="/blog">{item.author}</Link></li>
+                                                <li>{item.date}</li>
+                                                {/* <li>23 comments</li> */}
                                             </ul>
                                             <h2 className="title">{item.title}</h2>
                                             <div className="blog-details-thumb">

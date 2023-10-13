@@ -31,11 +31,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/index-6.js"
-    ],
-    "/lifestyle": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/lifestyle.js"
     ]
   },
   "ampFirstPages": []

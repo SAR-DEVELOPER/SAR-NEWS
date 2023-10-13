@@ -6,7 +6,8 @@ export default function BlogSidebar() {
     return (
         <>
             <aside className="blog-sidebar">
-                <div className="widget sidebar-widget">
+                
+                {/* <div className="widget sidebar-widget">
                     <div className="tgAbout-me">
                         <div className="tgAbout-thumb">
                             <img src="/assets/img/others/about_me.png" alt="me" />
@@ -16,13 +17,13 @@ export default function BlogSidebar() {
                             <span className="designation">Content Writer</span>
                         </div>
                         <div className="tgAbout-social">
-                            {/* <Link href="#"><i className="fab fa-facebook-f" /></Link>
+                            <Link href="#"><i className="fab fa-facebook-f" /></Link>
                             <Link href="#"><i className="fab fa-twitter" /></Link>
                             <Link href="#"><i className="fab fa-behance" /></Link>
-                            <Link href="#"><i className="fab fa-youtube" /></Link> */}
+                            <Link href="#"><i className="fab fa-youtube" /></Link>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 {/* <div className="widget sidebar-widget widget_categories">
                     <h4 className="widget-title">Trending Category</h4>
@@ -53,10 +54,10 @@ export default function BlogSidebar() {
                             <span className="float-right">15</span>
                         </li>
                     </ul>
-                </div>
+                </div>*/}
                 <div className="widget sidebar-widget">
                     <SidePostSlider />
-                </div> */}
+                </div> 
             </aside>
         </>
     )

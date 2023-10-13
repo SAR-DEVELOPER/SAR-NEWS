@@ -168,6 +168,7 @@ h6 {
   margin: 0px;
   padding: 0px;
 }
+
 .list-wrap li,
 .slick-dots li {
   list-style: none;
@@ -1048,12 +1049,12 @@ input[type=color] {
 }
 @media (max-width: 991.98px) {
   .header__top-right .lang {
-    display: none;
+    padding: 15px 20px;
   }
 }
 @media (max-width: 767.98px) {
   .header__top-right .lang {
-    display: block;
+    padding: 15px 20px;
   }
 }
 .header__top-right .lang .dropdown-toggle {

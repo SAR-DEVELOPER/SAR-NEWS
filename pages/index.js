@@ -31,11 +31,11 @@ export default function Home6() {
                                     {data.slice(0, 2).map((item, i) => (
                                         <div className="latest__post-item" key={i}>
                                             <div className="latest__post-thumb tgImage__hover">
-                                                <Link href={`/blog/${item.id}`}><img src={`/assets/img/${item.group}/${item.img}`} alt="img" /></Link>
+                                                <Link href={`/blog/r${item.id}`}><img src={`/assets/img/${item.group}/${item.img}`} alt="img" /></Link>
                                             </div>
                                             <div className="latest__post-content">
                                                 <ul className="tgbanner__content-meta list-wrap">
-                                                    <li className="category"><Link href="/blog">{item.group}</Link></li>
+                                                    <li className="category"><Link href="/blog">{item.category}</Link></li>
                                                     <li><span className="by">By</span> <Link href="/blog">{item.author}</Link></li>
                                                     <li>{item.date}</li>
                                                 </ul>
@@ -64,7 +64,8 @@ export default function Home6() {
                         </div>
                     </div>
                 </section>
-                <section className="handpicked-post-area white-bg section__hover-line pt-75 pb-50">
+
+                {/* <section className="handpicked-post-area white-bg section__hover-line pt-75 pb-50">
                     <div className="container">
                         <div className="section__title-wrap mb-40">
                             <div className="row align-items-end">
@@ -121,7 +122,8 @@ export default function Home6() {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
+
             </Layout>
         </>
     )

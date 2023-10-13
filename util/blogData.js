@@ -9,6 +9,11 @@ const data = [
         author: "shella dwinanda",
         date: "23 September 2023",
         description: "Restitusi makin cepat cair nih dengan diterbitkannya PER-5/PJ/2023 Tentang Pengembalian Kelebihan Pembayaran Pajak",
+        p1: "",
+        p2: "",
+        P3: "",
+        p4: "",
+        p5: "",
     },
     {
         id: 2,
@@ -19,7 +24,12 @@ const data = [
         category: "News",
         author: "shella dwinanda",
         date: "13 October 2023",
-        description: "E-Tax Court merupakan sebuah sistem informasi yang disediakan oleh Pengadilan Pajak untuk meningkatkan....."
+        description: "E-Tax Court merupakan sebuah sistem informasi yang disediakan oleh Pengadilan Pajak untuk meningkatkan.....",
+        p1: "",
+        p2: "",
+        P3: "",
+        p4: "",
+        p5: "",
     },
     {
         id: 3,
