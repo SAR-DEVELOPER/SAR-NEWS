@@ -2,8 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/index-6": "pages/index-6.js",
   "/blog": "pages/blog.js",
+  "/lifestyle": "pages/lifestyle.js",
   "/": "pages/index.js",
-  "/lifestyle": "pages/lifestyle.js"
+  "/index-6": "pages/index-6.js"
 }
