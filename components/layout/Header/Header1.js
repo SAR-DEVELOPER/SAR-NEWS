@@ -17,33 +17,24 @@ const Header1 = ({
                 <div className="header__top">
                     <div className="container">
                         <div className="row align-items-center">
-                            <div className="col-lg-4 col-md-6 col-sm-6 order-2 order-lg-0">
-                                <div className="header__top-search">
-                                    <form action="#">
-                                        <input type="text" placeholder="Search here..." />
-                                    </form>
-                                </div>
+                            <div className="col-lg-4 col-md-4 order-0 order-lg-2 d-none d-md-block">
                             </div>
-                            <div className="col-lg-4 col-md-3 order-0 order-lg-2 d-none d-md-block">
+                            <div className="col-lg-4 col-md-4 order-0 order-lg-2 d-none d-md-block">
                                 <div className="header__top-logo logo text-lg-center">
                                     <Link href="/" className="logo-dark"><img src="/assets/img/logo/logo.png" alt="Logo" /></Link>
-                                    <Link href="/" className="logo-light"><img src="/assets/img/logo/w_logo.png" alt="Logo" /></Link>
+                                    <Link href="/" className="logo-light"><img src="/assets/img/logo/logo.png" alt="Logo" /></Link>
                                 </div>
                             </div>
-                            <div className="col-lg-4 col-md-3 col-sm-6 order-3 d-none d-sm-block">
+                            <div className="col-lg-4 col-md-4 col-sm-6 order-3 d-none d-sm-block">
                                 <div className="header__top-right">
                                     <ul className="list-wrap">
-                                        <li className="news-btn"><Link href="#newsletter" className="btn"><span className="btn-text">subscribe</span></Link></li>
                                         <li className="lang">
                                             <div className="dropdown">
                                                 <button className={`dropdown-toggle ${langToggle ? "show" : ""}`} type="button" onClick={handleLangToggle}>
                                                     ENG
                                                 </button>
                                                 <ul className={`dropdown-menu ${langToggle ? "show" : ""}`}>
-                                                    <li><Link className="dropdown-item" href="#">SPA</Link></li>
-                                                    <li><Link className="dropdown-item" href="#">GRE</Link></li>
-                                                    <li><Link className="dropdown-item" href="#">CIN</Link></li>
-                                                    <li><Link className="dropdown-item" href="#">CIN</Link></li>
+                                                    <li><Link className="dropdown-item" href="#">IDN</Link></li>
                                                 </ul>
                                             </div>
                                         </li>

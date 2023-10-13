@@ -8,85 +8,6 @@ export default function Home6() {
     return (
         <>
             <Layout headerStyle={6} footerStyle={3} footerClass="black-bg" logoWhite>
-                <section className="tgbanner__area-five pt-80 pb-50">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-8">
-                                <div className="tgbanner__five-item big-post">
-                                    <div className="tgbanner__five-thumb tgImage__hover">
-                                        <Link href="/blog" className="tags">adventure</Link>
-                                        <Link href="/blog/98">
-                                            <img src="/assets/img/lifestyle/life_style01.jpg" alt="img" />
-                                        </Link>
-                                    </div>
-                                    <div className="tgbanner__five-content">
-                                        <ul className="tgbanner__content-meta list-wrap">
-                                            <li><span className="by">By</span> <Link href="/blog">alonso d.</Link></li>
-                                            <li>nov 21, 2022</li>
-                                        </ul>
-                                        <h2 className="title tgcommon__hover"><Link href="/blog/98">The multiverse is a hypothetical group of multiple universes.</Link></h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 d-lg-block gx-30">
-                                <div className="tgbanner__five-item small-post">
-                                    <div className="tgbanner__five-thumb tgImage__hover">
-                                        <Link href="/blog" className="tags">Travel</Link>
-                                        <Link href="/blog/99">
-                                            <img src="/assets/img/lifestyle/life_style02.jpg" alt="img" />
-                                        </Link>
-                                    </div>
-                                    <div className="tgbanner__five-content">
-                                        <ul className="tgbanner__content-meta list-wrap">
-                                            <li><span className="by">By</span> <Link href="/blog">alonso d.</Link></li>
-                                            <li>nov 21, 2022</li>
-                                        </ul>
-                                        <h2 className="title tgcommon__hover"><Link href="/blog/99">That share an universals hierarchy a large camp or burger.</Link></h2>
-                                    </div>
-                                </div>
-                                <div className="tgbanner__five-item small-post">
-                                    <div className="tgbanner__five-thumb tgImage__hover">
-                                        <Link href="/blog" className="tags">adventure</Link>
-                                        <Link href="/blog/100">
-                                            <img src="/assets/img/lifestyle/life_style03.jpg" alt="img" />
-                                        </Link>
-                                    </div>
-                                    <div className="tgbanner__five-content">
-                                        <ul className="tgbanner__content-meta list-wrap">
-                                            <li><span className="by">By</span> <Link href="/blog">alonso d.</Link></li>
-                                            <li>nov 21, 2022</li>
-                                        </ul>
-                                        <h2 className="title tgcommon__hover"><Link href="/blog/100">That share an universals hierarchy a large camp or burger.</Link></h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section className="popular__post-area lifestyle__popular-area white-bg section__hover-line pt-75 pb-75">
-                    <div className="container">
-                        <div className="section__title-wrap mb-40">
-                            <div className="row align-items-end">
-                                <div className="col-sm-6">
-                                    <div className="section__title">
-                                        <span className="section__sub-title">Popular</span>
-                                        <h3 className="section__main-title">Popular Post</h3>
-                                    </div>
-                                </div>
-                                <div className="col-sm-6">
-                                    <div className="section__read-more text-start text-sm-end">
-                                        <Link href="/blog">More Popular Post <i className="far fa-long-arrow-right" /></Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="trending__slider">
-                            <div className="swiper-container popular-active">
-                                <PopularSlider2 />
-                            </div>
-                        </div>
-                    </div>
-                </section>
                 <section className="latest-post-area pt-80 pb-80">
                     <div className="container">
                         <div className="row justify-content-center">
@@ -100,39 +21,42 @@ export default function Home6() {
                                             </div>
                                         </div>
                                         <div className="col-sm-6">
-                                            <div className="section__read-more text-start text-sm-end">
+                                            {/* <div className="section__read-more text-start text-sm-end">
                                                 <Link href="/blog">More Latest Post <i className="far fa-long-arrow-right" /></Link>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                 </div>
                                 <div className="latest__post-wrap">
-                                    {data.slice(106, 111).map((item, i) => (
+                                    {data.slice(0, 2).map((item, i) => (
                                         <div className="latest__post-item" key={i}>
                                             <div className="latest__post-thumb tgImage__hover">
                                                 <Link href={`/blog/${item.id}`}><img src={`/assets/img/${item.group}/${item.img}`} alt="img" /></Link>
                                             </div>
                                             <div className="latest__post-content">
                                                 <ul className="tgbanner__content-meta list-wrap">
-                                                    <li className="category"><Link href="/blog">technology</Link></li>
-                                                    <li><span className="by">By</span> <Link href="/blog">alonso d.</Link></li>
-                                                    <li>nov 22, 2022</li>
+                                                    <li className="category"><Link href="/blog">{item.group}</Link></li>
+                                                    <li><span className="by">By</span> <Link href="/blog">{item.author}</Link></li>
+                                                    <li>{item.date}</li>
                                                 </ul>
-                                                <h3 className="title tgcommon__hover"><Link href={`/blog/${item.id}`}>The multiverse is a hypothetical no group of the multiple universes.</Link></h3>
-                                                <p>Structured gripped tape invisible moulded cups for sauppor firm hold
-                                                    strong powermesh front liner sport detail.</p>
-                                                <ul className="post__activity list-wrap">
+                                                <h3 className="title tgcommon__hover"><Link href={`/blog/${item.id}`}>
+                                                    {item.title}
+                                                </Link></h3>
+                                                <p>
+                                                    {item.description}
+                                                </p>
+                                                {/* <ul className="post__activity list-wrap">
                                                     <li><i className="fal fa-signal" /> 1.5k</li>
                                                     <li><Link href={`/blog/${item.id}`}><i className="fal fa-comment-dots" /> 150</Link></li>
                                                     <li><i className="fal fa-share-alt" /> 32</li>
-                                                </ul>
+                                                </ul> */}
                                             </div>
                                         </div>
                                     ))}
                                 </div>
-                                <div className="latest__post-more text-center">
+                                {/* <div className="latest__post-more text-center">
                                     <Link href="#" id="loadMore" className="btn"><span className="text">Load More</span> <i className="far fa-plus" /></Link>
-                                </div>
+                                </div> */}
                             </div>
                             <div className="col-xl-3 col-lg-4 col-md-6">
                                 <BlogSidebar />

@@ -12,18 +12,19 @@ export default function BlogSidebar() {
                             <img src="/assets/img/others/about_me.png" alt="me" />
                         </div>
                         <div className="tgAbout-info">
-                            <p className="intro">Hi there, I’m <span>Rosalina D.</span></p>
+                            <p className="intro">Hi there, I’m <br/><span>Shella Dwinanda</span></p>
                             <span className="designation">Content Writer</span>
                         </div>
                         <div className="tgAbout-social">
-                            <Link href="#"><i className="fab fa-facebook-f" /></Link>
+                            {/* <Link href="#"><i className="fab fa-facebook-f" /></Link>
                             <Link href="#"><i className="fab fa-twitter" /></Link>
                             <Link href="#"><i className="fab fa-behance" /></Link>
-                            <Link href="#"><i className="fab fa-youtube" /></Link>
+                            <Link href="#"><i className="fab fa-youtube" /></Link> */}
                         </div>
                     </div>
                 </div>
-                <div className="widget sidebar-widget widget_categories">
+
+                {/* <div className="widget sidebar-widget widget_categories">
                     <h4 className="widget-title">Trending Category</h4>
                     <ul className="list-wrap">
                         <li>
@@ -55,32 +56,7 @@ export default function BlogSidebar() {
                 </div>
                 <div className="widget sidebar-widget">
                     <SidePostSlider />
-                </div>
-                <div className="widget sidebar-widget">
-                    <h4 className="widget-title">Instagram Feeds</h4>
-                    <div className="sidebarInsta__wrap">
-                        <div className="sidebarInsta__top">
-                            <div className="sidebarInsta__logo">
-                                <img src="/assets/img/instagram/insta_logo.png" alt="img" />
-                            </div>
-                            <div className="sidebarInsta__info">
-                                <h6 className="name"><Link href="#">ins.co/sarso.co</Link></h6>
-                                <span className="designation">Code Supply Co.</span>
-                            </div>
-                        </div>
-                        <div className="sidebarInsta__slider-wrap">
-                            <div className="swiper-container sidebarInsta-active">
-                                <InstagramSidebarSlider />
-                            </div>
-                            <div className="swiper-container sidebarInsta-active-2" dir="rtl">
-                                <InstagramSidebarSlider />
-                            </div>
-                        </div>
-                        <div className="sidebarInsta__bottom">
-                            <Link href="https://www.instagram.com/" target="_blank" className="btn"><i className="fab fa-instagram" /><span className="text">Follow Me</span></Link>
-                        </div>
-                    </div>
-                </div>
+                </div> */}
             </aside>
         </>
     )
