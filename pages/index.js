@@ -20,7 +20,7 @@ export default function Home1() {
                                 </div>
                                 <div className="tgbanner__content">
                                     <ul className="tgbanner__content-meta list-wrap">
-                                        <li className="category"><Link href="/blog">technology</Link></li>
+                                        <li className="category"><Link href="/blog">tax</Link></li>
                                         <li><span className="by">By</span> <Link href="/blog">alonso d.</Link></li>
                                         <li>nov 21, 2022</li>
                                     </ul>
